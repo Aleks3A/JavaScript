@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Currency Exchange</title> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    // Надіслати запит GET до URL
+    fetch('https://api.exchangeratesapi.io/latest?base=USD')
+    // Перетворити відповідь у формат json 
+    .then(response => response.json())
+    .then(data => {
+        // Вивести дані до консолі
+        console.log(data);
+    });
+});
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
